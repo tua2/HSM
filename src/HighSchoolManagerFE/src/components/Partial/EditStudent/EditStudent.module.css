@@ -1,0 +1,39 @@
+.EditStudent {
+  height: calc(100% - 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*.AddStudent .FormWrapper .FieldWrapper > span {*/
+  /*display: inline-block;*/
+  /*width: 100px;*/
+/*}*/
+
+.FormWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: calc(100px + 32px + 200px + 32px);
+}
+
+.FieldWrapper {
+  width: 100%;
+  margin: 0 0 32px;
+}
+
+.Input,
+.DatePicker {
+  width: 200px;
+}

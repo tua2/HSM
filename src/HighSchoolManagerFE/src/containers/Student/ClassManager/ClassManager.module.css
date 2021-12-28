@@ -1,0 +1,46 @@
+.ClassManager {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ClassManager .FilterInput {
+  width: 160px;
+  /*margin: 0px 48px 32px 16px;*/
+}
+
+.ClassManager .FilterSelect {
+  width: 160px;
+  /*margin: 0px 48px 32px 16px;*/
+}
+
+.ClassManager .FilterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ClassManager .FilterWrapper .FilterInput,
+.ClassManager .FilterWrapper .FilterSelect,
+.ClassManager .FilterWrapper > div > span {
+  margin: 0 16px 16px 0px;
+}
+
+.ClassManager .TableWrapper {
+  overflow: scroll;
+  height: calc(100vh - 362px);
+}
+
+.TransferBtnsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

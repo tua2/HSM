@@ -1,0 +1,19 @@
+.Sidedrawer {
+  background-color: #f2f2f2;
+  padding-top: 24px;
+  height: calc(100vh - 64px);
+  width: 225px;
+  margin-top: 64px;
+}
+
+.Sidedrawer ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Sidedrawer i {
+  width: 24px;
+  margin: 0 5px;
+}

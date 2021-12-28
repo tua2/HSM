@@ -1,0 +1,52 @@
+.ToolbarUtil {
+  height: 64px;
+  font-size: 32px;
+  text-align: center;
+  color: #5f6368;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease-out;
+  transition-property: border, color;
+}
+
+.Icon {
+  width: 64px;
+}
+
+.ToolbarUtil:hover {
+  cursor: default;
+}
+
+.ToolbarUtil span {
+  padding: 10px 5px 10px 10px;
+  font-size: 16px;
+}
+
+.ToolbarUtil > .active {
+  position: absolute;
+  align-self: flex-start;
+  width: 100%;
+  border: 0 solid transparent;
+  transition: 0.15s ease-out;
+  transition-property: border, box-shadow;
+}
+
+.ToolbarUtil:hover > .active {
+  border: 2px solid #6ab7ff;
+  box-shadow: 0 0 10px #6ab7ff;
+}
+
+.Dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 5px #5d5d5d45;
+}
+
+.ToolbarUtil:hover > .Dropdown {
+  display: block;
+}

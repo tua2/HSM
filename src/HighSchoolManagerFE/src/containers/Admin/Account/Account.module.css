@@ -1,0 +1,36 @@
+.FadeWrapper {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Account .FilterInput {
+  width: initial;
+}
+
+.Account .FilterSelect {
+  width: 160px;
+}
+
+.Account .FilterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Account .FilterWrapper .FilterInput,
+.Account .FilterWrapper .FilterSelect,
+.Account .FilterWrapper > div > span {
+  margin: 0 16px 32px 0px;
+}
+
+.Account .TableWrapper {
+  height: calc(100vh - 362px);
+}

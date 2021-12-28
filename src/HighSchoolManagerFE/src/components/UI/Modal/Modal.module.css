@@ -1,0 +1,36 @@
+.Modal {
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 90%;
+  height: calc(100vh - 20%);
+  border: 1px solid #F2F2F2;
+  box-shadow: 0 10px 10px #5F6368;
+  padding: 16px;
+  left: 5%;
+  top: 10%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  overflow: auto;
+  transition: all 0.3s ease-out;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@media (min-width: 1000px) {
+  .Modal {
+    width: 900px;
+    left: calc(50% - 450px);
+  }
+}

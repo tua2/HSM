@@ -1,0 +1,36 @@
+.FadeWrapper {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MonthlyReport .FilterInput {
+  width: initial;
+}
+
+.MonthlyReport .FilterSelect {
+  width: 160px;
+}
+
+.MonthlyReport .FilterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.MonthlyReport .FilterWrapper .FilterInput,
+.MonthlyReport .FilterWrapper .FilterSelect,
+.MonthlyReport .FilterWrapper > div > span {
+  margin: 0 16px 32px 0px;
+}
+
+.MonthlyReport .TableWrapper {
+  height: calc(100vh - 414px);
+}

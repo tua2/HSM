@@ -1,0 +1,109 @@
+.Button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #ffffff !important;
+  /*margin: 10px 10px 10px 0;*/
+  border-radius: 2px !important;
+  border: 0.2rem solid #ffffff2e;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out,
+    border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.Button * {
+  transition: transform 0.15s ease-out;
+}
+
+.Button:active * {
+  transform: scale(0.9, 0.9);
+}
+
+.Button:focus {
+  border-bottom-color: #ebcb8bb8 !important;
+  outline: none !important;
+}
+
+.Button[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  border-color: #5f6368;
+  background-color: #cccccc !important;
+  color: #868686 !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+
+.Button.danger {
+  background-color: #dc3545;
+  box-shadow: 0 0 10px #ef7e89;
+}
+
+.Button.danger:hover,
+.Button.danger:focus {
+  background-color: #dc3545;
+  border-color: #ef7e89;
+  box-shadow: 0 0 10px 3px #ef7e89;
+}
+
+.Button.danger:active {
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.Button.normal {
+  color: rgba(0, 0, 0, 0.65) !important;
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  box-shadow: 0px 0px 10px #bbbbbb33;
+}
+
+.Button.normal:hover,
+.Button.normal:focus {
+  color: #1e88e5 !important;
+  border-color: #6ab7ff;
+  box-shadow: 0 0 10px 3px #6ab7ff;
+}
+
+.Button.normal:active {
+  color: #0062cc !important;
+  border-color: #005cbf;
+}
+
+.Button.primary {
+  background-color: #1e88e5;
+  box-shadow: 0 0 10px #6ab7ff;
+}
+
+.Button.primary:hover,
+.Button.primary:focus {
+  background-color: #1e88e5;
+  border-color: #6ab7ff;
+  box-shadow: 0 0 10px 3px #6ab7ff;
+}
+
+.Button.primary:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.Button.success {
+  background-color: #28a745;
+  box-shadow: 0 0 10px #46d467;
+}
+
+.Button.success:hover,
+.Button.success:focus {
+  background-color: #28a745;
+  border-color: #46d467;
+  box-shadow: 0 0 10px 3px #46d467;
+}
+
+.Button.success:active {
+  background-color: #1e7e34;
+  border-color: #1c7430;
+}

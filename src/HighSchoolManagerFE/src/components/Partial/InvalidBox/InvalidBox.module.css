@@ -1,0 +1,5 @@
+.InvalidBox {
+  color: #DC3545;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}

@@ -1,0 +1,42 @@
+.FadeWrapper {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MarkInput {
+  border: thin solid transparent;
+  background: transparent !important;
+}
+
+.MarkInput:focus {
+  border: initial;
+  background: white !important;
+}
+
+.ResultView .FilterInput {
+  width: initial;
+}
+
+.ResultView .FilterSelect {
+  width: 160px;
+}
+
+.ResultView .FilterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ResultView .FilterWrapper .FilterInput,
+.ResultView .FilterWrapper .FilterSelect,
+.ResultView .FilterWrapper > div > span {
+  margin: 0 16px 32px 0px;
+}

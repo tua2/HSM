@@ -1,0 +1,10 @@
+.Wrapper {
+  padding: 6rem 2rem;
+  width: calc(100vw - 225px);
+  height: calc(100vh);
+  margin-right: auto;
+  margin-left: auto;
+  /*overflow: auto;*/
+  overflow: hidden;
+  box-shadow: rgba(187, 187, 187, 0.2) 0px 67px 1px 2px;
+}

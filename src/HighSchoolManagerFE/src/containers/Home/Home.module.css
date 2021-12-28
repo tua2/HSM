@@ -1,0 +1,111 @@
+.FadeWrapper {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.CardContainer {
+  display: flex;
+  height: calc(100vh - 232px);
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.CardContainer::before, .CardContainer::after {
+  content: '';  /* Insert pseudo-element */
+  margin: auto; /* Make it push flex items to the center */
+}
+
+.CardButton {
+  border: 6px solid #D9D9D9;
+  border-radius: 6px;
+  max-width: 320px;
+  min-width: 250px;
+  margin: 32px;
+  padding: 28px;
+  overflow-y: auto;
+  font-size: 16px;
+  box-shadow: 0 10px 10px #ededede6;
+  transition: 0.15s ease-out;
+  transition-property: border, box-shadow;
+}
+
+.CardButton:hover {
+  border-color: #1e88e5;
+  box-shadow: 0 10px 10px #6ab7ff;
+}
+
+.CardButton > div {
+  transform: scale(1, 1);
+  transition: transform 0.15s ease-out;
+}
+
+.CardButton:active > div {
+  transform: scale(0.95, 0.95);
+}
+
+.CardIcon {
+  padding-top: calc(50vh - 307px);
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  transition: 0.15s ease-out;
+  transition-property: padding, margin;
+}
+
+.CardButton:hover .CardIcon {
+  padding-top: 0;
+  margin-bottom: 0px;
+}
+
+.CardIcon i {
+  max-height: 200px;
+  opacity: 1;
+  font-size: 120px;
+  overflow: hidden;
+  color: #5F6368;
+  transition: 0.15s ease-out;
+  transition-property: max-height, opacity;
+}
+
+.CardButton:hover .CardIcon i {
+  max-height: 0px;
+  opacity: 0;
+}
+
+.CardInfo {
+  max-height: 250px;
+  transition: 0.15s ease-out;
+  transition-property: margin;
+}
+
+.CardButton:hover .CardInfo {
+}
+
+.CardTitle {
+
+}
+
+.CardDesc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  max-height: 0px;
+  opacity: 0;
+  transition: 0.15s ease-in-out;
+  transition-property: height, opacity, bottom, top;
+}
+
+.CardButton:hover .CardDesc {
+  max-height: 250px;
+  opacity: 1;
+  top: calc(0% + 64px);
+}

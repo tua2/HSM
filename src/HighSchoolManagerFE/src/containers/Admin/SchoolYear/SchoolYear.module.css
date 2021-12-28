@@ -1,0 +1,36 @@
+.FadeWrapper {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.SchoolYear .FilterInput {
+  width: initial;
+}
+
+.SchoolYear .FilterSelect {
+  width: 160px;
+}
+
+.SchoolYear .FilterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.SchoolYear .FilterWrapper .FilterInput,
+.SchoolYear .FilterWrapper .FilterSelect,
+.SchoolYear .FilterWrapper > div > span {
+  margin: 0 16px 32px 0px;
+}
+
+.SchoolYear .TableWrapper {
+  height: calc(100vh - 362px);
+}

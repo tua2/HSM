@@ -1,0 +1,39 @@
+.CreateAccount {
+  height: calc(100% - 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  overflow-y: auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.CreateAccount::before, .CreateAccount::after {
+  content: '';  /* Insert pseudo-element */
+  margin: auto; /* Make it push flex items to the center */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.FormWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: calc(100px + 32px + 200px + 32px);
+}
+
+.FieldWrapper {
+  width: 100%;
+  margin: 0 0 32px;
+}
+
+.Input,
+.DatePicker {
+  width: 200px;
+}

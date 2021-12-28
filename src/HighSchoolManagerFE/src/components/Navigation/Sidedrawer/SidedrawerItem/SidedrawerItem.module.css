@@ -1,0 +1,68 @@
+.SidedrawerWrapper {
+  font-size: 16px;
+  color: #5f6368;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  display: inline-block;
+  position: relative;
+  overflow-y: hidden;
+  font-weight: 500;
+  transition: 0.15s ease-out;
+  transition-property: background-color, border, color, box-shadow, height;
+}
+
+.SidedrawerWrapper.WrapperActive {
+  background-color: #ffffff;
+  box-shadow: -3px 0px 1px 2px #bbbbbb33;
+  height: initial;
+  z-index: 20;
+}
+
+.SidedrawerItem {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  padding: 10px;
+  color: #5f6368;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  align-items: center;
+  transition: 0.15s ease-out;
+  transition-property: background-color, border, color, box-shadow;
+}
+
+.SidedrawerItem:hover {
+  cursor: pointer;
+}
+
+.SidedrawerItem:hover,
+.SidedrawerItem.active {
+  color: #1e88e5;
+  text-decoration: none;
+  border-left: 4px solid #1e88e5;
+}
+
+.SidedrawerItem > .label {
+  transition: 0.15s;
+  transition-property: transform;
+}
+
+.SidedrawerItem:active > .label {
+  transform: scale(0.9, 0.9);
+}
+
+.SidedrawerItem > .indicator {
+  position: fixed;
+  left: 0px;
+  width: 3px;
+  height: 64px;
+  border: 0 solid transparent;
+  transition: 0.15s ease-out;
+  transition-property: border, box-shadow;
+}
+
+.SidedrawerItem:hover > .indicator {
+  border: 2px solid #6ab7ff;
+  box-shadow: 0 0 10px #6ab7ff;
+}

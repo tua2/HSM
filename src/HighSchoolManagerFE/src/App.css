@@ -1,0 +1,13 @@
+* {
+  /*font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+  font-family: 'Fira Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  box-sizing: border-box;
+}
+
+p,
+h1, h2, h3, h4, h5, h6,
+input {
+  color: #5F6368 !important;
+}

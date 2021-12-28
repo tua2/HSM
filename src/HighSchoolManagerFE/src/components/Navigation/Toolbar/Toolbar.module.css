@@ -1,0 +1,45 @@
+.Toolbar {
+  display: flex;
+  background-color: #fffffff7;
+  color: #ffffff;
+  height: 64px;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0 0 5px #5d5d5d45;
+  width: 100%;
+}
+
+.Logo {
+  width: 180px;
+  height: 32px;
+  margin: 16px 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.Logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Utils {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.DropdownLink {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #5f6368;
+  transition: background 0.15s ease-out;
+}
+
+.DropdownLink:hover {
+  color: #1e88e5;
+  text-decoration: none;
+  background-color: #cee7ff;
+  cursor: pointer;
+}
