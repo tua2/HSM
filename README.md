@@ -3,7 +3,6 @@
 
 #### Thành viên:
 - Nguyễn Văn Tuấn(18521606)
-- Bùi Tuấn Hữu (18521)
 
 
 ----
